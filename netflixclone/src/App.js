@@ -1,10 +1,10 @@
 
 import './App.css';
 import { Route, Routes } from 'react-router-dom';
-import Home from './components/Home'
+import Home from './components/Home/Home'
 function App() {
   return (
-    <div>
+    <div className='App'>
 
       <Routes>
         <Route path='/trending' exact element={<Home />} />
