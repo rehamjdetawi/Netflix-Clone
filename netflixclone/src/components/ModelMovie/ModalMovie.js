@@ -1,6 +1,6 @@
 import Modal from 'react-bootstrap/Modal';
 import { Button } from 'react-bootstrap';
-
+import './ModelMovie.css'
 function ModalMovie({ cardInfo, show, handleClose }) {
 
     return (
@@ -13,7 +13,7 @@ function ModalMovie({ cardInfo, show, handleClose }) {
                 </Modal.Header>
                 <Modal.Body className="body">
                     <h3>{cardInfo.title}</h3>
-                    <img alt="" src={cardInfo.poster_path} />
+                    <img alt="" src={`https://image.tmdb.org/t/p/w300/${cardInfo.poster_path}`} />
                     <div>
                         <label htmlFor="op">Write Your Opinion</label>
                         <input placeholder="Write Your Opinion" type="text" id="op" />

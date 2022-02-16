@@ -1,5 +1,5 @@
 import { Container, Row } from 'react-bootstrap';
-import Movie from './Movie'
+import Movie from '../Movie/Movie'
 function MovieList(props) {
 
     return (
