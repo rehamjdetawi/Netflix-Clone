@@ -8,7 +8,7 @@ function MovieList(props) {
             <Container className='div-container'>
                 <Row md={3}>
                     {
-                        props.moviedata.results && props.moviedata.results.map((ele) => (
+                        props.moviedata && props.moviedata.map((ele) => (
                             <Movie eleme={ele} />
                         ))
                     }
@@ -16,7 +16,7 @@ function MovieList(props) {
             </Container>
 
             {
-                !props.moviedata.results && <div><h2>No Such Results, Please try again later</h2></div>
+                !props.moviedata && <div><h2>No Such Results, Please try again later</h2></div>
             }
 
         </>
