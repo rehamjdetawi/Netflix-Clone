@@ -5,7 +5,7 @@ import MovieList from '../MovieList/MovieList'
 function Home() {
     const [data, setData] = useState([]);
     const getAllMovies = async () => {
-        return await axios.get(`https://api.themoviedb.org/3/trending/all/week?api_key=767d2494bac3fb508e3071015b4a3c09`)
+        return await axios.get(`https://movie-reham.herokuapp.com/trending`)
             .then(result => {
                 console.log(result.data);
                 return result.data;
